@@ -21,11 +21,17 @@ if __name__ == '__main__':
     score_number_two = simpledialog.askstring(title='wsp again',prompt='What was your second test score, hmm?')
     # TODO) Take the average score of both tests (total score / 2)
     if score_number_one == 'A' and score_number_two == 'A':
-        messagebox.showinfo(title='wsp AGAIN', message='Amazing job getting an A on your first 2 tests, I just hpe your scores did not drop...')
+        messagebox.showinfo(title='wsp AGAIN', message='Amazing job getting an A on your first 2 tests, I just hope your scores did not drop...')
     if score_number_one == 'B' and score_number_two == 'B':
         messagebox.showinfo(title='WSP AGAIN',message= ' Getting a B is not bad at all, and is a pretty good grade for your first 2 tests, but you should probably spend more time studying, but great job!')
     if score_number_one == 'C' and score_number_two == 'C':
-        messagebox.showinfo(title='wssssssssppppppppppp',message='Well those were your first 2 tests  ¯\_(ツ)_/¯ ')
+        messagebox.showinfo(title='wssssssssppppppppppp',message='Well those were your first 2 tests  I guess ¯\_(ツ)_/¯ ')
+    if score_number_one == 'A' and score_number_two == 'B' or  score_number_one == 'B' and score_number_two == 'A':
+        messagebox.showinfo(title='GamerhyunKr', message= 'Nice job on getting the A and the b is not bad either!')
+    if score_number_one == 'A' and score_number_two == 'C' or  score_number_one == 'A' and score_number_two == 'A':
+        messagebox.showinfo(title='hi',message=' huh, you got the best and worst score on your first 2 tests, huh...')
+    if score_number_one == 'B' and score_number_two == 'C' or  score_number_one == 'C' and score_number_two == 'B':
+        messagebox.showinfo(title='wsp again',message='Well, it is not that bad of a score for your first 2 tests, but it could be a bit better.')
     # TODO) Use if statements to check the average score and print the
     #  corresponding letter grade back to the user. Also, give a different
     #  message according to their grade. Example, for an 'A' grade:
