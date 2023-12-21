@@ -50,14 +50,16 @@ def draw():
     
     # 6. Use the image() method to draw the tail at the mouseX
     # and mouseY location. For example,
-    # image(tail, mouseX, mouseY)
+    #image(tail, mouseX, mouseY)
     
     
 
 
     # 7. Now, adjust your code so the tail sticks when you click the
     # mouse (this means it will no longer move when the mouse moves)
-    #
+        if mousePressed:
+            draw (tail,750,200)
+        
     # Hint: you will need to use the mousePressed variable and set the
     # x and y variables declared in setup()
         

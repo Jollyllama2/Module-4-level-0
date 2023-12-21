@@ -15,12 +15,17 @@ from tkinter import messagebox, simpledialog, Tk
 if __name__ == '__main__':
     # TODO) Ask the user for their score on the FIRST test and store their
     #  score in a variable
-
+    score_number_one = simpledialog.askstring(title='wsp',prompt='What was your first test score(pls use tthe letter grades abc, letters in all caps)?')
     # TODO) Ask the user for their score on the SECOND test and store their
     #  score in a variable
-
+    score_number_two = simpledialog.askstring(title='wsp again',prompt='What was your second test score, hmm?')
     # TODO) Take the average score of both tests (total score / 2)
-
+    if score_number_one == 'A' and score_number_two == 'A':
+        messagebox.showinfo(title='wsp AGAIN', message='Amazing job getting an A on your first 2 tests, I just hpe your scores did not drop...')
+    if score_number_one == 'B' and score_number_two == 'B':
+        messagebox.showinfo(title='WSP AGAIN',message= ' Getting a B is not bad at all, and is a pretty good grade for your first 2 tests, but you should probably spend more time studying, but great job!')
+    if score_number_one == 'C' and score_number_two == 'C':
+        messagebox.showinfo(title='wssssssssppppppppppp',message='Well those were your first 2 tests  ¯\_(ツ)_/¯ ')
     # TODO) Use if statements to check the average score and print the
     #  corresponding letter grade back to the user. Also, give a different
     #  message according to their grade. Example, for an 'A' grade:
