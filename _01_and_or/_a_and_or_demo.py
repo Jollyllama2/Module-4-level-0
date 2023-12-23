@@ -32,7 +32,7 @@ if __name__ == '__main__':
     age = simpledialog.askinteger(None, "How old are you?")
     height_inches = simpledialog.askinteger(None, "What is your height in inches?")
 
-    if age > 12 and height_inches > 48:
+    if age > 9 and height_inches > 48:
         messagebox.showinfo(None, 'You can ride the roller coaster!')
     else:
         messagebox.showerror(None, 'You are not tall enough and old enough to ride the roller coaster')

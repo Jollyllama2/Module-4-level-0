@@ -2,11 +2,29 @@
 Use boolean variables to control program logic between two different code
 paths.
 """
-
+from tkinter import messagebox, simpledialog, Tk
 
 if __name__ == '__main__':
     # TODO)
     #  1. Use a boolean variable to indicate if it is the weekend.
+
+    day = simpledialog.askstring(None, 'What day is it(capitalize the first letter)')
+    is_weekend  = False
+
+    if day == 'Saturday' or day == 'Sunday':
+        is_weekend = True
+
+    if is_weekend:
+        print('It is the weekend, enjoy')
+    else:
+        print('IMAGINE NOT BEING ON WEEKEND BREAK, HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA')
+
+
+
+
+
+
+
     #     Display a different message to the user depending on whether it is
     #     the weekend or not.
     #  2. Use a boolean variable to indicate if a student passed an exam.
