@@ -10,12 +10,17 @@ if __name__ == '__main__':
     window.withdraw()
     # TODO) Place the first 20 digits of pi into a variable as a string
     #  3.1415926535897932384
+    Pi = '3.1415926535897932384'
 
     # TODO) Print out the first 3 digits of pi. For example,
     #  pi_str[0]   # first digit
     #  pi_str[1]   # second digit
-
+    print(Pi[0:4])
     # TODO) Use a while loop to keep asking for the next digit of pi
+    stop = 0
+    while len(Pi) > stop:
+        print(Pi[stop])
+        stop = stop+1
 
         # TODO) If they are correct, print "correct".
         #  If they are not, print "incorrect" and break out of the while loop
